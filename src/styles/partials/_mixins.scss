@@ -11,3 +11,7 @@
     justify-content: space-between,
 }
 
+@mixin align-center{
+    display: flex;
+    align-items: center;
+}

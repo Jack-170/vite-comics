@@ -1,9 +1,16 @@
 <script>
 import HeaderComics from './components/HeaderComics.vue';
+import ContentSection from './components/ContentSection.vue';
+import IconsSection from './components/IconsSection.vue';
+
+
+
 
 export default{
     components:{
-      HeaderComics
+      HeaderComics,
+      ContentSection,
+      IconsSection
     }
 }
 
@@ -11,10 +18,15 @@ export default{
 
 <template>
 
-  <div class="black-row"></div>
-
-
  <HeaderComics />
+
+ <main>
+
+  <ContentSection/>
+
+  <IconsSection/>
+  
+ </main>
  
 </template>
 
