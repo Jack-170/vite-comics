@@ -27,6 +27,11 @@ export default{
                 },
             ]
         }
+    },
+    methods:{
+        GetImagePath: function(imgPath){
+            return new URL(imgPath, import.meta.url ).href;
+        }
     }
     
  }
@@ -39,35 +44,16 @@ export default{
     <div class="icons-section">
         <div class="container">
             <ul>
-                <li>
+                <li v-for="(icon, index) in Icons" :key="index">
                     <div class="box-icon">
-                        <img src="../assets/images/buy-comics-digital-comics.png" alt="">
+                        <img :src="GetImagePath(icon.src)" :alt="icon.text">
                     </div>
-                </li>
 
-                <li>
-                    <div class="box-icon">
-                        <img src="../assets/images/buy-comics-merchandise.png" alt="">
-                    </div>
+                    
+                        <p>{{icon.text}}</p>
+                  
                 </li>
-
-                <li>
-                    <div class="box-icon">
-                        <img src="../assets/images/buy-comics-subscriptions.png" alt="">
-                    </div>
-                </li>
-
-                <li>
-                    <div class="box-icon">
-                        <img src="../assets/images/buy-comics-shop-locator.png" alt="">
-                    </div>
-                </li>
-
-                <li>
-                    <div class="box-icon">
-                        <img src="../assets/images/buy-dc-power-visa.svg" alt="">
-                    </div>
-                </li>
+                
             </ul>
         </div>
 
@@ -111,10 +97,15 @@ export default{
 .box-icon{
     width: 50px;
     height: 70px;
-    border: 1px solid white;
 }
 
 
+
+p{
+    color: white;
+    @include align-center;
+    margin-left:12px;
+}
 
 
 

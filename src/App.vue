@@ -2,6 +2,7 @@
 import HeaderComics from './components/HeaderComics.vue';
 import ContentSection from './components/ContentSection.vue';
 import IconsSection from './components/IconsSection.vue';
+import ListSection from './components/ListSection.vue';
 
 
 
@@ -10,7 +11,8 @@ export default{
     components:{
       HeaderComics,
       ContentSection,
-      IconsSection
+      IconsSection,
+      ListSection
     }
 }
 
@@ -25,6 +27,8 @@ export default{
   <ContentSection/>
 
   <IconsSection/>
+
+  <ListSection/>
   
  </main>
  
