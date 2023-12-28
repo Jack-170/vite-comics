@@ -120,7 +120,7 @@ export default{
     .container{
         display: flex;
         color: white;
-        padding: 1.5rem;
+        padding: 1.5rem 0;
 
     }
    

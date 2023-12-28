@@ -69,7 +69,7 @@ export default{
 @use '../styles/partials/mixins' as *;
 
 .icons-section{
-    height: 150px;
+    height: 110px;
     width: 100%;
     background-color: #0282f9;
     font-size: 15px;
@@ -96,7 +96,7 @@ export default{
 
 .box-icon{
     width: 50px;
-    height: 70px;
+    height: 60px;
 }
 
 

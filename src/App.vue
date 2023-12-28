@@ -3,6 +3,8 @@ import HeaderComics from './components/HeaderComics.vue';
 import ContentSection from './components/ContentSection.vue';
 import IconsSection from './components/IconsSection.vue';
 import ListSection from './components/ListSection.vue';
+import Footer from './components/Footer.vue';
+
 
 
 
@@ -12,7 +14,8 @@ export default{
       HeaderComics,
       ContentSection,
       IconsSection,
-      ListSection
+      ListSection,
+      Footer
     }
 }
 
@@ -31,6 +34,10 @@ export default{
   <ListSection/>
   
  </main>
+
+ 
+
+ <Footer/>
  
 </template>
 
