@@ -55,6 +55,7 @@ export default{
 
     .container{
         @include align-center;
+        width: 60%;
 
 
         ul{

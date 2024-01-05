@@ -43,6 +43,7 @@ export default{
 
 .container{
     @include space-between;
+    font-size: 14px;
 
     .box-img{
         height: 70px;
